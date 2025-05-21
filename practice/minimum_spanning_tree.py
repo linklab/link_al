@@ -126,6 +126,7 @@ if __name__ == "__main__":
 
     graph = Graph(adjacency_list=adjacency_list)
     print("[Graph] number of nodes: {0}, number of edges: {1}".format(graph.num_nodes, graph.num_edges))
+    print("[Graph Edges]")	
     print(graph.edges)
     st = SpanningTree(graph=graph)
     st.prim(start_node='1')
