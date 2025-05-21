@@ -188,6 +188,7 @@ if __name__ == "__main__":
 
     graph = Graph(adjacency_list=bellman_ford_adjacency_list_with_negative_cycle, directed=True)
     print("[Graph] number of nodes: {0}, number of edges: {1}".format(graph.num_nodes, graph.num_edges))
+    print("[Graph Edges]")	
     print(graph.edges)
     sp = ShortestPath(graph=graph)
     is_ok = sp.bellman_ford(start_node='1')
