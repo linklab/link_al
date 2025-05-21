@@ -211,6 +211,7 @@ if __name__ == "__main__":
 
     graph = Graph(adjacency_list=floyd_warshall_adjacency_list, directed=True)
     print("[Graph] number of nodes: {0}, number of edges: {1}".format(graph.num_nodes, graph.num_edges))
+    print("[Graph Edges]")
     print(graph.edges)
     sp = ShortestPath(graph=graph)
     is_ok = sp.floyd_warshall()
